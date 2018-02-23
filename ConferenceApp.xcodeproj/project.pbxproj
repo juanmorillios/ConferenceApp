@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8730E6E4204075C300515750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730E6E3204075C300515750 /* AppDelegate.swift */; };
-		8730E6E6204075C300515750 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730E6E5204075C300515750 /* ViewController.swift */; };
+		8730E6E6204075C300515750 /* SessionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730E6E5204075C300515750 /* SessionListViewController.swift */; };
 		8730E6E9204075C300515750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8730E6E7204075C300515750 /* Main.storyboard */; };
 		8730E6EB204075C300515750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8730E6EA204075C300515750 /* Assets.xcassets */; };
 		8730E6EE204075C300515750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8730E6EC204075C300515750 /* LaunchScreen.storyboard */; };
 		8730E6F9204075C300515750 /* ConferenceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730E6F8204075C300515750 /* ConferenceAppTests.swift */; };
 		8730E704204075C300515750 /* ConferenceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730E703204075C300515750 /* ConferenceAppUITests.swift */; };
+		8730E71320408B1E00515750 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730E71220408B1E00515750 /* Session.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		8730E6E0204075C300515750 /* ConferenceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConferenceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8730E6E3204075C300515750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8730E6E5204075C300515750 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8730E6E5204075C300515750 /* SessionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionListViewController.swift; sourceTree = "<group>"; };
 		8730E6E8204075C300515750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8730E6EA204075C300515750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8730E6ED204075C300515750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		8730E6FF204075C300515750 /* ConferenceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConferenceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8730E703204075C300515750 /* ConferenceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceAppUITests.swift; sourceTree = "<group>"; };
 		8730E705204075C300515750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8730E71220408B1E00515750 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,9 @@
 		8730E6E2204075C300515750 /* ConferenceApp */ = {
 			isa = PBXGroup;
 			children = (
+				8730E71120408AF100515750 /* Models */,
 				8730E6E3204075C300515750 /* AppDelegate.swift */,
-				8730E6E5204075C300515750 /* ViewController.swift */,
+				8730E6E5204075C300515750 /* SessionListViewController.swift */,
 				8730E6E7204075C300515750 /* Main.storyboard */,
 				8730E6EA204075C300515750 /* Assets.xcassets */,
 				8730E6EC204075C300515750 /* LaunchScreen.storyboard */,
@@ -123,6 +126,14 @@
 				8730E705204075C300515750 /* Info.plist */,
 			);
 			path = ConferenceAppUITests;
+			sourceTree = "<group>";
+		};
+		8730E71120408AF100515750 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8730E71220408B1E00515750 /* Session.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8730E6E6204075C300515750 /* ViewController.swift in Sources */,
+				8730E6E6204075C300515750 /* SessionListViewController.swift in Sources */,
 				8730E6E4204075C300515750 /* AppDelegate.swift in Sources */,
+				8730E71320408B1E00515750 /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
