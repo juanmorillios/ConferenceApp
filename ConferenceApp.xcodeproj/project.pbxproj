@@ -15,6 +15,8 @@
 		8730E6F9204075C300515750 /* ConferenceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730E6F8204075C300515750 /* ConferenceAppTests.swift */; };
 		8730E704204075C300515750 /* ConferenceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730E703204075C300515750 /* ConferenceAppUITests.swift */; };
 		8730E71320408B1E00515750 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730E71220408B1E00515750 /* Session.swift */; };
+		8730E7162040959500515750 /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730E7142040959500515750 /* SessionTableViewCell.swift */; };
+		8730E7172040959500515750 /* SessionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8730E7152040959500515750 /* SessionTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		8730E703204075C300515750 /* ConferenceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceAppUITests.swift; sourceTree = "<group>"; };
 		8730E705204075C300515750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8730E71220408B1E00515750 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		8730E7142040959500515750 /* SessionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
+		8730E7152040959500515750 /* SessionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SessionTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				8730E6EA204075C300515750 /* Assets.xcassets */,
 				8730E6EC204075C300515750 /* LaunchScreen.storyboard */,
 				8730E6EF204075C300515750 /* Info.plist */,
+				8730E7142040959500515750 /* SessionTableViewCell.swift */,
+				8730E7152040959500515750 /* SessionTableViewCell.xib */,
 			);
 			path = ConferenceApp;
 			sourceTree = "<group>";
@@ -243,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8730E7172040959500515750 /* SessionTableViewCell.xib in Resources */,
 				8730E6EE204075C300515750 /* LaunchScreen.storyboard in Resources */,
 				8730E6EB204075C300515750 /* Assets.xcassets in Resources */,
 				8730E6E9204075C300515750 /* Main.storyboard in Resources */,
@@ -270,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8730E7162040959500515750 /* SessionTableViewCell.swift in Sources */,
 				8730E6E6204075C300515750 /* SessionListViewController.swift in Sources */,
 				8730E6E4204075C300515750 /* AppDelegate.swift in Sources */,
 				8730E71320408B1E00515750 /* Session.swift in Sources */,

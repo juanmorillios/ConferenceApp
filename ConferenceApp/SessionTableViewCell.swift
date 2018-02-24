@@ -10,15 +10,18 @@ import UIKit
 
 class SessionTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet private var titleLabel: UILabel?
+    @IBOutlet private var nameSpeakerLabel: UILabel?
+    @IBOutlet private var nameRoomLabel: UILabel?
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    var session: Session? {
+        didSet {
+            updateUI()
+        }
     }
-    
+    private func updateUI(){
+        titleLabel?.text = session?.title
+        nameSpeakerLabel?.text = session?.speaker
+        nameRoomLabel?.text = session?.roomLocation
+    }
 }
