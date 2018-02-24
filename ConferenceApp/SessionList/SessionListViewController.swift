@@ -11,14 +11,13 @@ import UIKit
 class SessionListViewController: UIViewController {
     @IBOutlet private var tableViewSession: UITableView?
     
-    var sessions: [Session] = []
-
+    var viewModel: SessionListViewModel = SessionListViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
     }
-
-
+    
     //MARK: Private
     private func configureTableView() {
         let nib = UINib(nibName: "SessionTableViewCell", bundle: nil)
@@ -28,20 +27,32 @@ class SessionListViewController: UIViewController {
 }
 
 //MARK: - UITableViewDataSorce
-extension SessionListViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sessions.count
-    }
 
+extension SessionListViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return viewModel.orderedSessionGroup.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let section = viewModel.orderedSessionGroup[section]
+        return section.date.description
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let section = viewModel.orderedSessionGroup[section]
+        return section.sessions.count
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let session = sessions[indexPath.row]
+        let section = viewModel.orderedSessionGroup[indexPath.section]
+        let session = section.sessions[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "SessionTableViewCell", for: indexPath)
         if let sessionCell = cell as? SessionTableViewCell {
             sessionCell.session = session
         }
         return cell
     }
-
+    
 }
 
 

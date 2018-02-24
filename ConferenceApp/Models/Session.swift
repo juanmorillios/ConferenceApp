@@ -12,4 +12,7 @@ struct Session {
     let title: String
     let speaker: String
     let roomLocation: String
+    let startsAt: Date
+    let endsAt: Date
+
 }
